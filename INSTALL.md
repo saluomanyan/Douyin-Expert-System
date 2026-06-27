@@ -1,84 +1,57 @@
-# INSTALL · Hermes-Douyin-Expert-System
+# INSTALL
 
-> 如何将本知识工程接入 Hermes Agent（或其他 AI Agent 框架）。
+> 将 Douyin-Expert-System 安装到 Hermes Agent
 
 ---
 
 ## 前置条件
 
-- 已安装 [Hermes Agent](https://hermes-agent.nousresearch.com/)（或其他 Agent 框架）
+- [Hermes Agent](https://hermes-agent.nousresearch.com/docs) 已安装
 - Git
 
 ---
 
-## 方式一：克隆到本地
+## 安装步骤
+
+### 1. 克隆仓库
 
 ```bash
 git clone https://github.com/saluomanyan/Douyin-Expert-System.git
 cd Douyin-Expert-System
 ```
 
----
+### 2. 链接到 Hermes
 
-## 方式二：作为 Hermes Skill 加载
+> ⚠️ 此步骤将在 Phase 6（v1.0）时完善。
+> 当前项目处于 **v0.1 工程骨架**阶段，Memory/Skills 尚未建设完成。
 
-### 2.1 直接加载 Skill
-
-将本项目的 `skills/` 目录下的 Skill 文件复制到 Hermes 的 skills 目录：
-
-```bash
-# 复制到 Hermes skills 目录
-cp -r skills/* ~/.hermes/skills/douyin-expert/
-```
-
-然后在 Hermes 会话中加载：
-
-```
-/skill douyin-expert/<skill-name>
-```
-
-### 2.2 加载 Memory 为 Hermes Memory
-
-Hermes 支持通过 Memory 工具加载外部知识。将 `memory/` 目录下的 `.md` 文件作为知识源导入：
+预期安装方式（待验证）：
 
 ```bash
-# 查看 Hermes 当前 memory 配置
-hermes memory status
+# 将 Memory 安装为 Hermes 的长期记忆
+hermes memory import ./memory/
 
-# 将 memory 文件作为上下文注入
-# 具体方式取决于 Hermes 版本，参见：
-# https://hermes-agent.nousresearch.com/docs/user-guide/features/memory
+# 将 Skills 安装为 Hermes 的技能
+hermes skills install ./skills/
 ```
-
----
-
-## 方式三：作为独立知识库使用
-
-本知识工程**不绑定任何 Agent 框架**。你可以：
-
-1. **直接阅读**：所有 `.md` 文件都是人类可读的
-2. **接入 LangGraph**：将 Memory 条目作为 system prompt 注入
-3. **接入 Claude Code**：将 Memory 文件放到 CLAUDE.md 引用的路径
-4. **接入 RAG 系统**：将 `memory/` 目录作为向量化素材
 
 ---
 
 ## 目录说明
 
-| 目录 | 用途 | 接入方式 |
+| 目录 | 用途 | 当前状态 |
 |------|------|----------|
-| `memory/` | 专家长期认知 | System Prompt 注入 / RAG 向量化 |
-| `skills/` | 执行技能 | Agent Skill 加载 |
-| `framework/` | 分析框架 | 决策时引用 |
-| `checklist/` | 检查清单 | 执行前逐项核对 |
-| `knowledge/` | 知识提炼 | 参考阅读 |
-| `repository/` | 原始资料 | 溯源用 |
-| `adapter/` | Agent 适配器 | 各框架的加载脚本/配置 |
+| `memory/` | 专家长期记忆（核心资产） | 🚧 建设准备中 |
+| `skills/` | Hermes 可加载的执行能力 | ⬜ 待 Phase 5 |
+| `framework/` | 分析框架 | ⬜ 待 Phase 3 |
+| `checklist/` | 操作检查清单 | ⬜ 待 Phase 4 |
+| `standards/` | 各类规范文档 | ✅ v0.1 |
+| `templates/` | 文件模板 | ✅ v0.1 |
 
 ---
 
-## V0.1 阶段说明
+## 更新
 
-当前为 **Phase 1**（项目骨架阶段），仅建立了目录结构和规范体系，**尚未包含具体知识内容**。
-
-Memory 内容将从 Phase 2 开始按 [ROADMAP.md](./ROADMAP.md) 逐步建设。
+```bash
+git pull origin main
+```

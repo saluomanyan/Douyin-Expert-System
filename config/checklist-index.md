@@ -1,28 +1,9 @@
-# Checklist Index Config
+# Checklist Index
 
-> Checklist 索引配置文件。
+> 所有 Checklist 的索引
 
----
+| ID | 名称 | 阶段 | 状态 |
+|----|------|------|------|
+| — | — | — | — |
 
-## Checklist 编号前缀
-
-```
-cl-
-```
-
-## 触发时机
-
-```yaml
-Before-Shooting:     "每次拍摄前"
-Before-Editing:      "开始剪辑前"
-Before-Publishing:   "点击发布前"
-Homepage:            "账号装修后"
-Weekly-Review:       "每周日"
-Monthly-Review:      "每月末"
-```
-
-## 严重程度标记
-
-- 🔴 = 致命（不通过则不建议发布）
-- 🟡 = 重要（应尽量满足）
-- 🟢 = 建议（锦上添花）
+> 当前 Checklist 数量：0（v0.1 工程骨架阶段，尚未建设 Checklist）

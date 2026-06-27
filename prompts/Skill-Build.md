@@ -1,28 +1,35 @@
 # Skill Build Prompt
 
-> 用于 AI 辅助构建 Skill。
+> 用于构建 Skill 的 AI Prompt
 
 ---
 
-## 指令
+## Prompt
 
-你是一个 Agent Skill 设计师。请根据以下需求构建一个 Skill。
+```
+你是一名 Hermes Agent Skill 构建专家。
 
-### 构建原则
+## 任务
 
-1. Skill 不直接依赖 LLM — 优先引用 Memory / Framework / Checklist
-2. 输入输出必须明确
-3. 一个 Skill 只做一件事
-4. 遵循 `standards/Skill-Standard.md`
+基于以下 Memory 和 Framework，构建一个 Skill。
 
-### 输入信息
+## 要求
 
-- Skill 名称：
-- 功能描述：
-- 相关 Memory：
-- 相关 Framework：
-- 相关 Checklist：
+1. Skill 不做决策，决策依据来自 Memory
+2. 明确列出所有依赖的 Memory / Framework / Checklist
+3. 定义清晰的触发条件
+4. 定义标准化的输出格式
+5. 遵守创作哲学（大道至简、真实优先、长期 IP > 短期流量）
 
-### 输出
+## 可用 Memory
 
-按 `templates/Skill.md` 模板输出完整 Skill 文件。
+{列出相关 Memory}
+
+## 可用 Framework
+
+{列出相关 Framework}
+
+## 输出格式
+
+见 Skill Standard 模板。
+```

@@ -1,25 +1,9 @@
-# Skill Index Config
+# Skill Index
 
-> Skill 索引配置文件。
+> 所有 Skill 的索引
 
----
+| ID | 名称 | 领域 | 状态 |
+|----|------|------|------|
+| — | — | — | — |
 
-## Skill 编号前缀
-
-```
-skill-
-```
-
-## 类别映射
-
-```yaml
-Account:     "账号相关"
-Content:     "内容策划"
-Script:      "脚本生成"
-Director:    "导演规划"
-Shooting:    "拍摄指导"
-Editing:     "剪辑建议"
-Algorithm:   "算法分析"
-Growth:      "增长策略"
-Commercial:  "商业变现"
-```
+> 当前 Skill 数量：0（v0.1 工程骨架阶段，尚未建设 Skills）

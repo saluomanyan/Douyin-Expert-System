@@ -1,27 +1,30 @@
 # Framework Build Prompt
 
-> 用于 AI 辅助构建 Framework。
+> 用于构建分析框架的 AI Prompt
 
 ---
 
-## 指令
+## Prompt
 
-你是一个决策框架设计师。请根据以下需求构建一个分析 Framework。
+```
+你是一名抖音运营方法论专家。
 
-### 构建原则
+## 任务
 
-1. 必须是决策树格式 — 每步有明确的分支和结论
-2. 必须有明确输出 — 不能以"视情况而定"结束
-3. 每一步引用相关的 Memory
-4. 遵循 `standards/Framework-Standard.md`
+为以下场景设计一个结构化的分析框架。
 
-### 输入信息
+## 场景
 
-- Framework 名称：
-- 用途：
-- 相关 Memory：
-- 触发条件：
+{描述分析场景}
 
-### 输出
+## 要求
 
-按 `templates/Framework.md` 模板输出完整 Framework 文件。
+1. 框架必须是固定的思考路径，不是自由发挥
+2. 每个分析步骤都必须引用具体的 Memory
+3. 输出必须有固定格式
+4. 框架应该像决策树一样可执行
+
+## 输出格式
+
+见 Framework Standard 模板。
+```

@@ -1,64 +1,36 @@
 ---
-id: skill-XXX
-name: "模板：Skill 名称"
-description: "这个 Skill 做什么"
-category: "Account|Content|Script|Director|Shooting|Editing|Algorithm|Growth|Commercial"
-inputs:
-  - name: input1
-    type: string
-    required: true
-    description: "输入参数说明"
-outputs:
-  - name: output1
-    type: markdown
-    description: "输出说明"
-references:
-  memory: [MXXXX, MXXXX]           # 引用的 Memory 编号
-  framework: ["Framework-Name"]     # 引用的 Framework
-  checklist: ["Checklist-Name"]     # 引用的 Checklist
-version: 1
-status: draft
+skill_id: {领域-功能}
+name: {中文名称}
+version: 1.0
+category: {Account | Content | Script | Director | Shooting | Editing | Algorithm | Growth | Commercial}
+trigger: {触发条件描述}
+required_memory: []
+required_framework: []
+required_checklist: []
+created: YYYY-MM-DD
 last_updated: YYYY-MM-DD
 ---
 
-# <Skill 名称>
+# {技能名称}
 
-## 功能描述
+## 触发条件
 
-<一句话描述这个 Skill 完成什么任务>
+{当用户说什么时触发}
 
-## 执行流程
+## 能力描述
 
-```
-输入
-  ↓
-Step 1: <加载引用的 Memory>
-  ↓
-Step 2: <调用 Framework 分析>
-  ↓
-Step 3: <调用 Checklist 核对>
-  ↓
-Step 4: <LLM 组织语言>
-  ↓
-输出
-```
+{这个 Skill 能做什么}
 
-## 输入
+## 工作流程
 
-| 参数 | 类型 | 必填 | 说明 |
-|------|------|------|------|
-| input1 | string | ✅ | — |
+### Step 1：读取 Memory
+
+### Step 2：应用 Framework
+
+### Step 3：对照 Checklist
+
+### Step 4：输出
 
 ## 输出格式
 
-```markdown
-## <输出标题>
-
-- <输出内容>
-```
-
-## 引用说明
-
-- **Memory**：<为什么引用这些 Memory>
-- **Framework**：<为什么引用这些 Framework>
-- **Checklist**：<为什么引用这些 Checklist>
+## 约束

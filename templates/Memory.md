@@ -1,63 +1,48 @@
 ---
-id: MXXXX
-title: "模板：Memory 标题"
-level: LX                          # L1/L2/L3/L4
-category: "分类"
-tags: [标签1, 标签2, 标签3]
-confidence: medium                 # high / medium / low
+memory_id: M-XXX
+title: {标题}
+level: {L1 | L2 | L3 | L4}
+version: 1.0
+credibility: ★★★☆☆
 sources:
-  - name: "来源1"
-    type: "book|course|article|interview|report"
-    url: "https://..."
-    note: ""
-  - name: "来源2"
-    type: ""
-    url: ""
-    note: ""
-  - name: "来源3"
-    type: ""
-    url: ""
-    note: ""
+  - {来源1：名称 + URL}
+  - {来源2}
+  - {来源3}
+applicable:
+  - {适用场景}
+not_applicable:
+  - {不适用场景}
+tags: []
+created: YYYY-MM-DD
 last_updated: YYYY-MM-DD
-version: 1
-status: draft                     # draft / review / published / deprecated
+reviewed_by: {审核人}
+locked_until: YYYY-MM-DD
 ---
 
-# MXXXX：<中文标题>
-
-## 一句话摘要
-
-<用一句话说清这条认知的核心。不超过 50 字。>
-
-## 为什么重要
-
-<这条认知为什么是基石而非技巧？它决定/影响了什么？>
+# {标题}
 
 ## 核心认知
 
-1. **<认知1>** — <解释，1-3 句>
-2. **<认知2>** — <解释，1-3 句>
-3. **<认知3>** — <解释，1-3 句>
+{一句话表达最核心的认知。像 CPU 指令一样直接。}
 
-（3-7 条）
+## 为什么
+
+{解释底层机制。}
+
+## 怎么做
+
+{具体操作步骤，每步具有操作锚点。}
+
+## 适用边界
+
+{什么时候成立？什么时候不成立？}
 
 ## 常见误区
 
-- ❌ <大多数人错在哪>
-- ❌ <另一个误区>
+{大多数人会犯的错。}
 
-## 如何应用
+## 证据支撑
 
-<不是教程步骤，而是给出推演方向。Agent 拿到这条认知后，应该怎么用它来思考/判断？>
+{多源验证的简要说明。}
 
----
-
-## 交叉验证
-
-| 来源 | 类型 | 观点一致性 |
-|------|------|-----------|
-| 来源1 | — | ✅ / ⚠️ / ❌ |
-| 来源2 | — | ✅ / ⚠️ / ❌ |
-| 来源3 | — | ✅ / ⚠️ / ❌ |
-
-**验证结论**：<总结>
+## 相关 Memory

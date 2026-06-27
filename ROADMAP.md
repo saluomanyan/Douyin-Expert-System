@@ -1,128 +1,97 @@
-# ROADMAP · Hermes-Douyin-Expert-System
+# ROADMAP
 
-> 建设路线图。每个 Phase 对应一组 GitHub Commit，逐步构建完整的抖音专家知识系统。
-
----
-
-## Phase 1 ✅ — 项目骨架（当前）
-
-**目标**：建立整个知识工程的目录结构和规范体系。
-
-| 文件/目录 | 状态 |
-|-----------|------|
-| README.md | ✅ |
-| ROADMAP.md | ✅ |
-| INSTALL.md | ✅ |
-| CHANGELOG.md | ✅ |
-| CONTRIBUTING.md | ✅ |
-| LICENSE | ✅ |
-| docs/ | ✅ |
-| standards/ | ✅ |
-| memory/INDEX.md | ✅ |
-| skills/INDEX.md | ✅ |
-| framework/INDEX.md | ✅ |
-| checklist/INDEX.md | ✅ |
-| knowledge/INDEX.md | ✅ |
-| prompts/ | ✅ |
-| templates/ | ✅ |
-| config/ | ✅ |
-| adapter/ | ✅ |
-| archive/ | ✅ |
-
-**不包含具体知识内容**。只建立规范和模板。
+> Hermes-Douyin-Expert-System 版本路线图
 
 ---
 
-## Phase 2 — Memory 建设（专家长期认知）
+## 总体原则
 
-**目标**：按 Memory-Standard 规范，逐条创建高质量专家记忆。
-
-| 编号 | 主题 | 所属层级 | 优先级 |
-|------|------|----------|--------|
-| M0001 | 创作者哲学 | L1_Worldview | 🔴 高 |
-| M0002 | 抖音底层逻辑 | L1_Worldview | 🔴 高 |
-| M0003 | 账号定位 | L2_Strategy | 🔴 高 |
-| M0004 | 账号主页 | L3_Tactics | 🟡 中 |
-| M0005 | 封面设计 | L3_Tactics | 🟡 中 |
-| M0006 | 标题设计 | L3_Tactics | 🟡 中 |
-| M0007 | 黄金三秒 | L3_Tactics | 🔴 高 |
-| M0008 | 视频导演 | L3_Tactics | 🟡 中 |
-| M0009 | 拍摄方法论 | L3_Tactics | 🟢 低 |
-| M0010 | 剪辑逻辑 | L3_Tactics | 🟢 低 |
-| M0011 | 台词设计 | L3_Tactics | 🟡 中 |
-| M0012 | 完播率 | L4_Platform | 🔴 高 |
-| M0013 | 点赞机制 | L4_Platform | 🟡 中 |
-| M0014 | 评论机制 | L4_Platform | 🔴 高 |
-| M0015 | 关注机制 | L4_Platform | 🔴 高 |
-| M0016 | IP人设 | L2_Strategy | 🟡 中 |
-| M0017 | 内容系列化 | L2_Strategy | 🟢 低 |
-| M0018 | 数据分析 | L4_Platform | 🟡 中 |
-| M0019 | 直播逻辑 | L2_Strategy | 🟢 低 |
-| M0020 | 小黄车成交 | L2_Strategy | 🟢 低 |
-
-每一条 Memory 的标准参见 [standards/Memory-Standard.md](./standards/Memory-Standard.md)。
+- 每个版本对应一个可交付的里程碑
+- 以 Git Commit 为单位推进，不是以"模块"为单位
+- **宁缺毋滥**：不追求数量，追求每条知识都经过严格审核
 
 ---
 
-## Phase 3 — Framework 建设（分析框架）
+## v0.1 — 工程骨架 🚧
 
-**目标**：建立可复用的结构化分析框架。
+**目标**：建立完整的知识工程目录结构和所有规范文件。**不写任何具体知识。**
 
-| 框架 | 用途 |
-|------|------|
-| Account-Diagnosis | 账号诊断：7 维度评分卡 |
-| Positioning-Validation | 定位验证：人群×痛点×差异化 |
-| Topic-Decision-Tree | 选题决策树：9 问筛选 |
-| Script-Evaluation | 脚本评估：钩子/信息密度/完播驱动 |
-| Director-Review | 导演审查：视觉节奏/情绪曲线 |
-| Editing-Quality | 剪辑质检：节奏/转场/信息效率 |
-| Content-Retro | 内容复盘：数据→归因→优化 |
-| Data-Dashboard | 数据看板：核心指标解读框架 |
-| IP-Architecture | IP 架构：人格锚点体系 |
-| Commercial-Model | 商业模型：变现路径推演 |
+### 交付物
 
----
-
-## Phase 4 — Checklist 建设（检查清单）
-
-**目标**：将顶层认知转化为可逐项勾选的执行清单。
-
-| Checklist | 触发时机 |
-|-----------|----------|
-| 拍摄前检查 | 每次拍摄前 |
-| 剪辑前检查 | 开始剪辑前 |
-| 发布前检查 | 点击发布前 |
-| 主页检查 | 账号装修后 |
-| 周复盘检查 | 每周日 |
-| 月复盘检查 | 每月末 |
+- [ ] `README.md` — 项目概述
+- [ ] `ROADMAP.md` — 本文
+- [ ] `INSTALL.md` — 安装指南
+- [ ] `CHANGELOG.md` — 变更日志
+- [ ] `CONTRIBUTING.md` — 贡献指南
+- [ ] `LICENSE` — MIT
+- [ ] `docs/` — 架构、设计原则、命名规范、版本策略、FAQ
+- [ ] `standards/` — Memory/Skill/Framework/Checklist/Knowledge/Citation 规范
+- [ ] `templates/` — 所有文件模板
+- [ ] `config/` — 索引文件
+- [ ] `prompts/` — AI 辅助 Prompt
+- [ ] 所有空目录 + `.gitkeep`
 
 ---
 
-## Phase 5 — Skills 建设（执行能力）
+## v0.2 — 首批 Memory（L1 世界观 + L2 战略）
 
-**目标**：构建可被 Agent 调用的 Skill。
+**目标**：填充 10-20 条核心 Memory，建立知识质量标杆。
 
-Skills 设计原则：
-- 不直接依赖 LLM
-- 优先调用 Memory → Framework → Checklist
-- LLM 只负责组织最终语言
+### 计划 Memory 列表
+
+| 编号 | 标题 | 等级 |
+|------|------|------|
+| M-001 | 创作者哲学 | L1 |
+| M-002 | 抖音平台底层逻辑 | L1 |
+| M-003 | 推荐算法机制 | L2 |
+| M-004 | 用户行为动机（停留/点赞/评论/关注/分享/收藏） | L2 |
+| M-005 | 账号增长底层逻辑 | L2 |
+| M-006 | IP 长期建设原则 | L2 |
+| M-007 | 起号核心策略 | L2 |
+| M-008 | 风景类内容创作原则 | L1 |
 
 ---
 
-## Phase 6 — Adapter 接入
+## v0.3 — Memory 扩充（L3 战术层）
 
-**目标**：将知识工程接入 Hermes / LangGraph / Claude Code / OpenManus 等 Agent 框架。
+**目标**：填充 30-50 条战术层 Memory。
+
+### 计划主题
+
+- 账号搭建（昵称、头像、简介、主页装修）
+- 封面设计（锚点、信息密度、颜色、文字、人物摆放）
+- 标题设计（CTR、信息结构、避坑）
+- 黄金三秒（钩子类型、适用场景）
+- 视频节奏（情绪曲线、信息密度、转折）
+- 脚本结构（开头-中段-结尾、CTA）
+- 导演知识（第一镜、镜头节奏、空镜、B-roll）
+- 摄影（构图、光线、焦段、移动镜头）
+- 剪辑（切点、留白、字幕、音乐）
 
 ---
 
-## 推进方式
+## v0.4 — Framework + Checklist
 
-每次推进以 **GitHub Commit** 为单位：
-- Commit 1：项目骨架 ✅（当前）
-- Commit 2：Memory Standard 规范
-- Commit 3：Skills Standard 规范
-- Commit 4：M0001 创作者哲学
-- Commit 5：M0002 抖音底层逻辑
-- ……
+**目标**：建立所有分析框架和操作检查清单。
 
-每完成一个 Commit，同步更新本文件。
+---
+
+## v0.5 — Skills
+
+**目标**：建立第一批可执行 Skill。Skill 调用 Memory → Framework → Checklist，LLM 仅组织语言。
+
+---
+
+## v1.0 — Agent 适配器
+
+**目标**：将知识工程接入 Hermes Agent，形成完整工作流。
+
+---
+
+## 远期愿景
+
+- 800+ 条高质量 Memory
+- 覆盖账号全生命周期（起号→增长→变现→维护）
+- 支持多 Agent 框架（Hermes / LangGraph / ClaudeCode / OpenManus）
+- 社区贡献机制
+- 知识版本管理与 A/B 测试

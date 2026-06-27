@@ -1,13 +1,5 @@
 # Future Adapters
 
-> 为未来可能接入的 Agent 框架预留。
+> 预留未来 Agent 框架适配器目录
 
----
-
-## 候选框架
-
-- AutoGPT
-- MetaGPT
-- CrewAI
-- AutoGen
-- 其他……
+🚧 未来建设。

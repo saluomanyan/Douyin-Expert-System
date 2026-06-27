@@ -1,13 +1,5 @@
-# Claude Code Adapter
+# ClaudeCode Adapter
 
-> 将 Douyin-Expert-System 接入 Claude Code (Anthropic)。
+> 将 Douyin-Expert-System 接入 Claude Code CLI
 
----
-
-## 状态
-
-🚧 Phase 6 开始建设。
-
-## 计划
-
-将 Memory 条目作为 CLAUDE.md 引用的知识文件导入。
+🚧 未来建设。

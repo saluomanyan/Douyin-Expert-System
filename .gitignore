@@ -1,32 +1,26 @@
-# Gitignore for Hermes-Douyin-Expert-System
-
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Editor files
-*.swp
-*.swo
-*~
+# Editor
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# Temporary files
-*.tmp
-*.bak
-*.log
-
-# Python (for future adapter scripts)
+# Python
 __pycache__/
 *.pyc
-*.pyo
 .venv/
-venv/
 
-# Node (for future adapter scripts)
+# Node
 node_modules/
 
-# Archive / Drafts that shouldn't be committed
-archive/Draft/*
-!archive/Draft/.gitkeep
+# Backup
+*.bak
+*.tmp
+~*
+
+# Original chat log (kept for reference, not in repo)
+和chatGpt的聊天记录.md

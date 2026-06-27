@@ -1,73 +1,86 @@
-# Naming Convention · 命名规范
+# Naming Convention
+
+> 项目文件命名规范
 
 ---
 
-## 文件命名
-
-### Memory 条目
+## Memory 文件
 
 ```
-M<编号>_<主题英文>.md
+{M编号}_{标题}.md
 
 示例：
-M0001_Creator-Philosophy.md
-M0002_Douyin-Fundamentals.md
-M0007_Golden-3-Seconds.md
+M-001_创作者哲学.md
+M-002_抖音平台底层逻辑.md
+M-015_封面设计.md
 ```
 
-### Skill 文件
+- 编号：`M-001` 起，3 位数字，零填充
+- 标题：中文，简洁，使用下划线连接
+- 文件放在对应等级目录下（L1-L4）
+
+---
+
+## Skill 文件
 
 ```
-<类别>_<功能>.md
+{领域}_{功能}.skill.md
+
+示例：
+Account_Diagnosis.skill.md
+Script_Generate.skill.md
+Cover_Design.skill.md
+```
+
+- 领域：Account / Content / Script / Director / Shooting / Editing / Algorithm / Growth / Commercial
+- 功能：具体能力描述
+- 后缀：`.skill.md`
+
+---
+
+## Framework 文件
+
+```
+{领域}_{分析类型}.md
 
 示例：
 Account_Diagnosis.md
-Script_Generation.md
-Cover_Optimization.md
-```
-
-### Framework 文件
-
-```
-<领域>_<用途>.md
-
-示例：
-Topic_Decision-Tree.md
-Account_7D-Scorecard.md
-Script_Evaluation.md
-```
-
-### Checklist 文件
-
-```
-<触发时机>_<范围>.md
-
-示例：
-Before-Publishing_Full.md
-Weekly-Review.md
-Homepage_Check.md
-```
-
-### Knowledge 文件
-
-```
-<来源类型>_<主题>.md
-
-示例：
-Official_Creator-Academy_2024.md
-Report_Douyin-User-Behavior_2025Q1.md
+Topic_Selection.md
+Script_Structure.md
 ```
 
 ---
 
-## 目录命名
+## Checklist 文件
 
-- 使用 **PascalCase** 或 **kebab-case**
-- 层级目录：`L1_Worldview/`、`L2_Strategy/`、`L3_Tactics/`、`L4_Platform/`
-- 功能目录：`Before-Shooting/`、`Weekly-Review/`
+```
+{阶段}_{检查类型}.md
+
+示例：
+Before-Publishing_Video.md
+Homepage_Review.md
+Weekly-Review_Content.md
+```
 
 ---
 
-## 标签体系
+## Knowledge 文件
 
-见 `config/tags.md`
+```
+{来源}_{主题}.md
+
+示例：
+Official_Algorithm-2026.md
+Reports_User-Behavior-2025.md
+Courses_LiJiaqi-Operations.md
+```
+
+---
+
+## 通用规则
+
+- 目录名：PascalCase（`L1_Worldview`、`Before-Shooting`）
+- 文件名：下划线连接
+- 中文标题优先，便于人类阅读
+- 所有文件 UTF-8 编码
+- 禁止空格和特殊字符

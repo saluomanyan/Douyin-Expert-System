@@ -1,32 +1,18 @@
 ---
-id: cl-XXX
-name: "模板：Checklist 名称"
-description: "这条 Checklist 检查什么"
-category: "Before-Shooting|Before-Editing|Before-Publishing|Homepage|Weekly-Review|Monthly-Review"
-trigger: "<触发时机>"
-version: 1
-status: draft
-last_updated: YYYY-MM-DD
-references:
-  memory: [MXXXX, MXXXX]
-  framework: ["Framework-Name"]
+checklist_id: {阶段-检查类型}
+name: {中文名称}
+version: 1.0
+stage: {Before-Shooting | Before-Editing | Before-Publishing | Homepage | Weekly-Review | Monthly-Review}
+description: {一句话描述}
+created: YYYY-MM-DD
 ---
 
-# <Checklist 名称>
+# {检查清单名称}
 
-> 触发时机：<什么时候使用>
+## 使用时机
 
 ## 检查项
 
-### <类别1>
+### 一、{类别}
 
-- [ ] 🔴 <检查项1> — 为什么重要：<简要引用 Memory>
-- [ ] 🟡 <检查项2> — 为什么重要：<简要引用 Memory>
-- [ ] 🟢 <检查项3>
-
-### <类别2>
-
-- [ ] 🔴 <检查项>
-- [ ] 🟡 <检查项>
-
-（严重程度：🔴 致命 / 🟡 重要 / 🟢 建议）
+- [ ] **{检查点}** — 引用：[M-XXX](...)

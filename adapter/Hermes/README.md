@@ -1,23 +1,27 @@
 # Hermes Adapter
 
-> 将 Douyin-Expert-System 接入 Hermes Agent。
+> 将 Douyin-Expert-System 接入 Hermes Agent
 
 ---
 
 ## 状态
 
-🚧 Phase 6 开始建设。
+🚧 待 Phase 6 建设。
 
-## 计划
+## 预计接入方式
 
-Hermes Adapter 将实现：
-1. 将 Memory 条目自动注入为 Hermes 的 system prompt / memory
-2. 将 Skill 文件注册为 Hermes 的 Skill
-3. 将 Framework 注册为可被 Skill 调用的决策模块
-4. 将 Checklist 注册为发布前的自动审核流程
+### Memory 加载
 
-## 相关文档
+```bash
+hermes memory import ../../memory/
+```
 
-- [Hermes Agent 官方文档](https://hermes-agent.nousresearch.com/docs/)
-- [Hermes Memory 配置](https://hermes-agent.nousresearch.com/docs/user-guide/features/memory)
-- [Hermes Skills 系统](https://hermes-agent.nousresearch.com/docs/reference/skills-catalog)
+### Skills 安装
+
+```bash
+hermes skills install ../../skills/
+```
+
+### 配置
+
+参见 Hermes Agent 文档：https://hermes-agent.nousresearch.com/docs

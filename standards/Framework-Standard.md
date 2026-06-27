@@ -1,95 +1,67 @@
-# Framework Standard · 分析框架规范
+# Framework Standard
 
-> 定义 Hermes-Douyin-Expert-System 中每个分析框架的标准格式。
-
----
-
-## Framework 是什么
-
-Framework 是**结构化的分析/决策模型**。
-
-它告诉 Agent：当面对一个问题时，应该按什么逻辑去推演。
+> Hermes 分析框架设计规范
 
 ---
 
-## Framework 标准格式
+## 一、Framework 是什么
 
-```yaml
----
-id: fw-001
-name: "选题决策树"
-description: "拿到一个选题后的 9 步推演流程"
-category: "Topic"
-version: 1
-last_updated: 2026-06-27
----
-```
+Framework 是**结构化的分析方法论**。
 
-### 内容结构
-
-1. **触发条件** — 什么情况下使用这个 Framework
-2. **输入** — 需要什么信息
-3. **推演步骤** — 逐步决策流程（决策树格式）
-4. **输出** — 最终给出什么结论
-5. **关联** — 引用哪些 Memory / Checklist
+它定义了分析某个问题时的固定思考路径。不是让 AI 自由发挥，而是按既定框架推演。
 
 ---
 
-## Framework 示例结构
+## 二、Framework 模板
 
 ```markdown
-# 选题决策树
+---
+framework_id: {领域-分析类型}
+name: {中文名称}
+version: 1.0
+category: {Account | Positioning | Topic | Script | Director | Editing | Review | Data | IP}
+description: {一句话描述}
+referenced_memory:
+  - M-XXX
+  - M-YYY
+created: YYYY-MM-DD
+last_updated: YYYY-MM-DD
+---
 
-## 触发条件
-用户提出一个内容选题时。
+# {框架名称}
 
-## 输入
-- 选题描述
-- 目标人群
-- 账号定位
+## 适用场景
 
-## 推演步骤
+{什么时候用这个框架}
 
-### Q1: 这个东西有人搜吗？
-→ 没有人搜 → 不建议（除非你有极强的制造需求能力）
-→ 有人搜 → 继续
+## 分析步骤
 
-### Q2: 用户为什么看？
-→ 没有明确理由 → 不建议
-→ 有明确利益/情绪价值 → 继续
+### Step 1：{步骤名称}
 
-### Q3: 为什么现在看？
-→ 没有时效性/紧迫性 → 降低优先级
-→ 有 → 继续
+{具体分析的问题和方法}
 
-（继续 Q4-Q9……）
+### Step 2：{步骤名称}
 
-## 输出
-- 结论：建议做 / 不建议做 / 可以做但需修改
-- 理由：逐条说明
-- 建议方向：如果不做这个，做什么
+...
+
+## 输出格式
+
+{定义分析结果的结构}
 ```
 
 ---
 
-## Framework 分类
+## 三、计划的 Framework 列表
 
-| 类别 | 目录 | 示例 |
-|------|------|------|
-| Account | framework/Account/ | 账号诊断框架 |
-| Positioning | framework/Positioning/ | 定位验证框架 |
-| Topic | framework/Topic/ | 选题决策树 |
-| Script | framework/Script/ | 脚本评估框架 |
-| Director | framework/Director/ | 导演审查框架 |
-| Editing | framework/Editing/ | 剪辑质检框架 |
-| Review | framework/Review/ | 内容复盘框架 |
-| Data | framework/Data/ | 数据分析框架 |
-| IP | framework/IP/ | IP 架构框架 |
-
----
-
-## 设计原则
-
-- 必须是**决策树/流程图**式的推演，不是散文
-- 每一步都是**二选一或多选一的判断**
-- **必须有明确结论**，不能以"视情况而定"结束
+| ID | 名称 | 说明 |
+|----|------|------|
+| account-diagnosis | 账号诊断框架 | 系统评估账号健康状况 |
+| positioning | 定位分析框架 | 验证和优化账号定位 |
+| topic-validation | 选题决策框架 | 判断选题是否值得拍 |
+| hook-design | 钩子设计框架 | 黄金三秒钩子设计方法 |
+| script-structure | 脚本结构框架 | 视频脚本的标准结构 |
+| director-planning | 导演规划框架 | 镜头设计与节奏规划 |
+| editing-review | 剪辑审核框架 | 剪辑质量评估标准 |
+| data-review | 数据复盘框架 | 视频发布后数据回顾 |
+| ip-growth | IP 成长框架 | 长期 IP 建设路径评估 |
+| commercial-fit | 商业适配框架 | 变现方式与账号匹配度 |
