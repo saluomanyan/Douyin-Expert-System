@@ -1,0 +1,32 @@
+# Gitignore for Hermes-Douyin-Expert-System
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Python (for future adapter scripts)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Node (for future adapter scripts)
+node_modules/
+
+# Archive / Drafts that shouldn't be committed
+archive/Draft/*
+!archive/Draft/.gitkeep
